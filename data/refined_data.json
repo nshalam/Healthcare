@@ -1,0 +1,443 @@
+[
+    {
+        "Location": "Alaska",
+        "Employer": "0.465",
+        "Non-Group": "0.049",
+        "Medicaid": "0.228",
+        "Medicare": "0.114",
+        "Military": "0.037",
+        "Uninsured": "0.107"
+    },
+    {
+        "Location": "Arizona",
+        "Employer": "0.455",
+        "Non-Group": "0.057",
+        "Medicaid": "0.208",
+        "Medicare": "0.162",
+        "Military": "0.015",
+        "Uninsured": "0.103"
+    },
+    {
+        "Location": "Arkansas",
+        "Employer": "0.411",
+        "Non-Group": "0.055",
+        "Medicaid": "0.274",
+        "Medicare": "0.161",
+        "Military": "0.013",
+        "Uninsured": "0.086"
+    },
+    {
+        "Location": "California",
+        "Employer": "0.47",
+        "Non-Group": "0.069",
+        "Medicaid": "0.268",
+        "Medicare": "0.12",
+        "Military": "0.008",
+        "Uninsured": "0.065"
+    },
+    {
+        "Location": "Colorado",
+        "Employer": "0.527",
+        "Non-Group": "0.068",
+        "Medicaid": "0.182",
+        "Medicare": "0.134",
+        "Military": "0.02",
+        "Uninsured": "0.069"
+    },
+    {
+        "Location": "Connecticut",
+        "Employer": "0.525",
+        "Non-Group": "0.052",
+        "Medicaid": "0.224",
+        "Medicare": "0.142",
+        "Military": "0.005",
+        "Uninsured": "0.052"
+    },
+    {
+        "Location": "Delaware",
+        "Employer": "0.503",
+        "Non-Group": "0.054",
+        "Medicaid": "0.194",
+        "Medicare": "0.184",
+        "Military": "0.01",
+        "Uninsured": "0.055"
+    },
+    {
+        "Location": "Florida",
+        "Employer": "0.403",
+        "Non-Group": "0.109",
+        "Medicaid": "0.177",
+        "Medicare": "0.182",
+        "Military": "0.017",
+        "Uninsured": "0.112"
+    },
+    {
+        "Location": "Georgia",
+        "Employer": "0.483",
+        "Non-Group": "0.068",
+        "Medicaid": "0.183",
+        "Medicare": "0.13",
+        "Military": "0.02",
+        "Uninsured": "0.116"
+    },
+    {
+        "Location": "Hawaii",
+        "Employer": "0.496",
+        "Non-Group": "0.053",
+        "Medicaid": "0.197",
+        "Medicare": "0.17",
+        "Military": "0.049",
+        "Uninsured": "0.035"
+    },
+    {
+        "Location": "Idaho",
+        "Employer": "0.475",
+        "Non-Group": "0.073",
+        "Medicaid": "0.204",
+        "Medicare": "0.151",
+        "Military": "0.014",
+        "Uninsured": "0.083"
+    },
+    {
+        "Location": "Illinois",
+        "Employer": "0.531",
+        "Non-Group": "0.052",
+        "Medicaid": "0.201",
+        "Medicare": "0.144",
+        "Military": "0.006",
+        "Uninsured": "0.066"
+    },
+    {
+        "Location": "Indiana",
+        "Employer": "0.521",
+        "Non-Group": "0.048",
+        "Medicaid": "0.205",
+        "Medicare": "0.15",
+        "Military": "0.008",
+        "Uninsured": "0.068"
+    },
+    {
+        "Location": "Iowa",
+        "Employer": "0.534",
+        "Non-Group": "0.053",
+        "Medicaid": "0.206",
+        "Medicare": "0.159",
+        "Military": "0.007",
+        "Uninsured": "0.041"
+    },
+    {
+        "Location": "Kansas",
+        "Employer": "0.535",
+        "Non-Group": "0.066",
+        "Medicaid": "0.142",
+        "Medicare": "0.15",
+        "Military": "0.02",
+        "Uninsured": "0.087"
+    },
+    {
+        "Location": "Kentucky",
+        "Employer": "0.458",
+        "Non-Group": "0.037",
+        "Medicaid": "0.283",
+        "Medicare": "0.156",
+        "Military": "0.012",
+        "Uninsured": "0.054"
+    },
+    {
+        "Location": "Louisiana",
+        "Employer": "0.406",
+        "Non-Group": "0.049",
+        "Medicaid": "0.324",
+        "Medicare": "0.14",
+        "Military": "0.014",
+        "Uninsured": "0.067"
+    },
+    {
+        "Location": "Maine",
+        "Employer": "0.469",
+        "Non-Group": "0.062",
+        "Medicaid": "0.197",
+        "Medicare": "0.188",
+        "Military": "0.019",
+        "Uninsured": "0.065"
+    },
+    {
+        "Location": "Maryland",
+        "Employer": "0.539",
+        "Non-Group": "0.054",
+        "Medicaid": "0.198",
+        "Medicare": "0.134",
+        "Military": "0.015",
+        "Uninsured": "0.06"
+    },
+    {
+        "Location": "Massachusetts",
+        "Employer": "0.544",
+        "Non-Group": "0.056",
+        "Medicaid": "0.236",
+        "Medicare": "0.137",
+        "Military": "0.004",
+        "Uninsured": "0.023"
+    },
+    {
+        "Location": "Michigan",
+        "Employer": "0.502",
+        "Non-Group": "0.052",
+        "Medicaid": "0.233",
+        "Medicare": "0.162",
+        "Military": "0.006",
+        "Uninsured": "0.045"
+    },
+    {
+        "Location": "Minnesota",
+        "Employer": "0.558",
+        "Non-Group": "0.053",
+        "Medicaid": "0.183",
+        "Medicare": "0.154",
+        "Military": "0.008",
+        "Uninsured": "0.044"
+    },
+    {
+        "Location": "Mississippi",
+        "Employer": "0.425",
+        "Non-Group": "0.063",
+        "Medicaid": "0.241",
+        "Medicare": "0.146",
+        "Military": "0.017",
+        "Uninsured": "0.108"
+    },
+    {
+        "Location": "Missouri",
+        "Employer": "0.517",
+        "Non-Group": "0.059",
+        "Medicaid": "0.16",
+        "Medicare": "0.166",
+        "Military": "0.013",
+        "Uninsured": "0.085"
+    },
+    {
+        "Location": "Montana",
+        "Employer": "0.434",
+        "Non-Group": "0.077",
+        "Medicaid": "0.213",
+        "Medicare": "0.176",
+        "Military": "0.019",
+        "Uninsured": "0.081"
+    },
+    {
+        "Location": "Nebraska",
+        "Employer": "0.539",
+        "Non-Group": "0.074",
+        "Medicaid": "0.157",
+        "Medicare": "0.145",
+        "Military": "0.018",
+        "Uninsured": "0.067"
+    },
+    {
+        "Location": "Nevada",
+        "Employer": "0.466",
+        "Non-Group": "0.053",
+        "Medicaid": "0.207",
+        "Medicare": "0.144",
+        "Military": "0.019",
+        "Uninsured": "0.111"
+    },
+    {
+        "Location": "New Hampshire",
+        "Employer": "0.559",
+        "Non-Group": "0.065",
+        "Medicaid": "0.134",
+        "Medicare": "0.186",
+        "Military": "0.011",
+        "Uninsured": "0.045"
+    },
+    {
+        "Location": "New Jersey",
+        "Employer": "0.546",
+        "Non-Group": "0.056",
+        "Medicaid": "0.184",
+        "Medicare": "0.14",
+        "Military": "0.004",
+        "Uninsured": "0.07"
+    },
+    {
+        "Location": "New Mexico",
+        "Employer": "0.36",
+        "Non-Group": "0.042",
+        "Medicaid": "0.335",
+        "Medicare": "0.158",
+        "Military": "0.022",
+        "Uninsured": "0.083"
+    },
+    {
+        "Location": "New York",
+        "Employer": "0.472",
+        "Non-Group": "0.056",
+        "Medicaid": "0.285",
+        "Medicare": "0.135",
+        "Military": "0.004",
+        "Uninsured": "0.048"
+    },
+    {
+        "Location": "North Carolina",
+        "Employer": "0.465",
+        "Non-Group": "0.074",
+        "Medicaid": "0.186",
+        "Medicare": "0.157",
+        "Military": "0.024",
+        "Uninsured": "0.094"
+    },
+    {
+        "Location": "North Dakota",
+        "Employer": "0.566",
+        "Non-Group": "0.078",
+        "Medicaid": "0.12",
+        "Medicare": "0.148",
+        "Military": "0.022",
+        "Uninsured": "0.066"
+    },
+    {
+        "Location": "Ohio",
+        "Employer": "0.514",
+        "Non-Group": "0.044",
+        "Medicaid": "0.213",
+        "Medicare": "0.163",
+        "Military": "0.008",
+        "Uninsured": "0.058"
+    },
+    {
+        "Location": "Oklahoma",
+        "Employer": "0.432",
+        "Non-Group": "0.057",
+        "Medicaid": "0.219",
+        "Medicare": "0.152",
+        "Military": "0.02",
+        "Uninsured": "0.12"
+    },
+    {
+        "Location": "Oregon",
+        "Employer": "0.479",
+        "Non-Group": "0.058",
+        "Medicaid": "0.233",
+        "Medicare": "0.163",
+        "Military": "0.007",
+        "Uninsured": "0.06"
+    },
+    {
+        "Location": "Pennsylvania",
+        "Employer": "0.51",
+        "Non-Group": "0.05",
+        "Medicaid": "0.215",
+        "Medicare": "0.166",
+        "Military": "0.006",
+        "Uninsured": "0.053"
+    },
+    {
+        "Location": "Rhode Island",
+        "Employer": "0.513",
+        "Non-Group": "0.065",
+        "Medicaid": "0.22",
+        "Medicare": "0.154",
+        "Military": "0.007",
+        "Uninsured": "0.041"
+    },
+    {
+        "Location": "South Carolina",
+        "Employer": "0.45",
+        "Non-Group": "0.068",
+        "Medicaid": "0.195",
+        "Medicare": "0.174",
+        "Military": "0.023",
+        "Uninsured": "0.09"
+    },
+    {
+        "Location": "South Dakota",
+        "Employer": "0.518",
+        "Non-Group": "0.076",
+        "Medicaid": "0.134",
+        "Medicare": "0.163",
+        "Military": "0.03",
+        "Uninsured": "0.079"
+    },
+    {
+        "Location": "Tennessee",
+        "Employer": "0.482",
+        "Non-Group": "0.066",
+        "Medicaid": "0.19",
+        "Medicare": "0.151",
+        "Military": "0.018",
+        "Uninsured": "0.093"
+    },
+    {
+        "Location": "Texas",
+        "Employer": "0.472",
+        "Non-Group": "0.067",
+        "Medicaid": "0.168",
+        "Medicare": "0.111",
+        "Military": "0.016",
+        "Uninsured": "0.166"
+    },
+    {
+        "Location": "Utah",
+        "Employer": "0.6",
+        "Non-Group": "0.098",
+        "Medicaid": "0.106",
+        "Medicare": "0.104",
+        "Military": "0.011",
+        "Uninsured": "0.081"
+    },
+    {
+        "Location": "Vermont",
+        "Employer": "0.48",
+        "Non-Group": "0.057",
+        "Medicaid": "0.225",
+        "Medicare": "0.189",
+        "Military": "0.009",
+        "Uninsured": "0.04"
+    },
+    {
+        "Location": "Virginia",
+        "Employer": "0.53",
+        "Non-Group": "0.047",
+        "Medicaid": "0.167",
+        "Medicare": "0.151",
+        "Military": "0.039",
+        "Uninsured": "0.066"
+    },
+    {
+        "Location": "Washington",
+        "Employer": "0.523",
+        "Non-Group": "0.053",
+        "Medicaid": "0.207",
+        "Medicare": "0.141",
+        "Military": "0.017",
+        "Uninsured": "0.059"
+    },
+    {
+        "Location": "West Virginia",
+        "Employer": "0.431",
+        "Non-Group": "0.029",
+        "Medicaid": "0.282",
+        "Medicare": "0.188",
+        "Military": "0.011",
+        "Uninsured": "0.059"
+    },
+    {
+        "Location": "Wisconsin",
+        "Employer": "0.543",
+        "Non-Group": "0.051",
+        "Medicaid": "0.18",
+        "Medicare": "0.166",
+        "Military": "0.006",
+        "Uninsured": "0.054"
+    },
+    {
+        "Location": "Wyoming",
+        "Employer": "0.502",
+        "Non-Group": "0.075",
+        "Medicaid": "0.115",
+        "Medicare": "0.171",
+        "Military": "0.02",
+        "Uninsured": "0.117"
+    }
+]
