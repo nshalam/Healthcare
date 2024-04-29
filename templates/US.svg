@@ -1,12 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="959" height="593">
 
 
-
-    <title>Blank map of the United States, territories not included</title>
+  <title>Healthcare map of the United States, territories not included</title>
   <defs>
   <style type="text/css">
-  .state {fill:#C0C0C0}                        /* default color for all states not specified below */
-   a {fill:#C0C0C0}   
+  .state {fill:#E0E0E0}                        /* default color for all states not specified below */
+  a {fill:#C0C0C0}   
   .borders {stroke:#FFFFFF; stroke-width:2}    /* color and width of borders between states */
   .dccircle {display:none}
   .separator1 {stroke:#B0B0B0; stroke-width:2} /* color and width of lines around Alaska and Hawaii */
@@ -18,9 +17,52 @@
   In this example, Kansas, Montana and Pennsylvania are colored blue, and California and Delaware are colored red.
   Place this code in the empty space below. */
 
+  {% for key, value in insured.items() %}
+  {% if value <= 0.01 %}
+      {% set color = '#440000' %}  <!-- Darkest -->
+  {% elif value <= 0.02 %}
+      {% set color = '#550000' %}
+  {% elif value <= 0.03 %}
+      {% set color = '#660000' %}
+  {% elif value <= 0.04 %}
+      {% set color = '#770000' %}
+  {% elif value <= 0.05 %}
+      {% set color = '#880000' %}
+  {% elif value <= 0.06 %}
+      {% set color = '#990000' %}
+  {% elif value <= 0.07 %}
+      {% set color = '#aa0000' %}
+  {% elif value <= 0.08 %}
+      {% set color = '#bb0000' %}
+  {% elif value <= 0.09 %}
+      {% set color = '#cc0000' %}
+  {% elif value <= 0.10 %}
+      {% set color = '#dd0000' %}
+  {% elif value <= 0.11 %}
+      {% set color = '#ee0000' %}
+  {% elif value <= 0.12 %}
+      {% set color = '#ff0000' %}
+  {% elif value <= 0.13 %}
+      {% set color = '#ff1111' %}
+  {% elif value <= 0.14 %}
+      {% set color = '#ff2222' %}
+  {% elif value <= 0.15 %}
+      {% set color = '#ff3333' %}
+  {% elif value <= 0.16 %}
+      {% set color = '#ff4444' %}
+  {% else %}
+      {% set color = '#ff5555' %}  <!-- Lightest -->
+  {% endif %}
   
+  .{{key}} { fill: {{ color }}; }
+{% endfor %}
+
+
+
+
   </style>
   </defs>
+
 
 
   <g class="state" >
@@ -396,5 +438,27 @@
   
   <path class="separator1" fill="none" d="m 215,493 v 55 l 36,45 m -251,-168 h 147 l 68,68 h 85 l 54,54 v 46"/>
   
+    <rect x="900" y="200" width="25" height="20" fill="#440000" />
+    <rect x="900" y="220" width="25" height="20" fill="#550000" />
+    <rect x="900" y="240" width="25" height="20" fill="#660000" />
+    <rect x="900" y="260" width="25" height="20" fill="#770000" />
+    <rect x="900" y="280" width="25" height="20" fill="#880000" />
+    <rect x="900" y="300" width="25" height="20" fill="#990000" />
+    <rect x="900" y="320" width="25" height="20" fill="#aa0000" />
+    <rect x="900" y="340" width="25" height="20" fill="#bb0000" />
+    <rect x="900" y="360" width="25" height="20" fill="#cc0000" />
+    <rect x="900" y="380" width="25" height="20" fill="#dd0000" />
+    <rect x="900" y="400" width="25" height="20" fill="#ee0000" />
+    <rect x="900" y="420" width="25" height="20" fill="#ff0000" />
+    <rect x="900" y="440" width="25" height="20" fill="#ff1111" />
+    <rect x="900" y="460" width="25" height="20" fill="#ff2222" />
+    <rect x="900" y="480" width="25" height="20" fill="#ff3333" />
+    <rect x="900" y="500" width="25" height="20" fill="#ff4444" />
+    <rect x="900" y="520" width="25" height="20" fill="#ff5555" />
+    <text x="913" y="213" font-size="10" fill="#ffffff" text-anchor="middle">99%</text>
+    <text x="913" y="535" font-size="10" fill="#ffffff" text-anchor="middle">83%</text>
+    <text x="925" y="360" font-size="25" fill="#000000" transform="rotate(90 930,360)" text-anchor="middle">% Insured</text>
+
+
   </svg>
   

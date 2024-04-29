@@ -1,5 +1,16 @@
 [
     {
+        "Location": "Alabama",
+        "Abbreviation": "al",
+        "Employer": "0.463",
+        "Non-Group": "0.06",
+        "Medicaid": "0.208",
+        "Medicare": "0.163",
+        "Military": "0.02",
+        "Uninsured": "0.086",
+        "Population": "5024279"
+    },
+    {
         "Location": "Alaska",
         "Abbreviation": "ak",
         "Employer": "0.465",
@@ -537,16 +548,5 @@
         "Military": "0.02",
         "Uninsured": "0.117",
         "Population": "576851"
-    },
-    {
-        "Location": "",
-        "Abbreviation": "",
-        "Employer": "",
-        "Non-Group": "",
-        "Medicaid": "",
-        "Medicare": "",
-        "Military": "",
-        "Uninsured": "",
-        "Population": ""
     }
 ]

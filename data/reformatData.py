@@ -8,7 +8,7 @@ headers = lines[0].strip().split(',')
 
 dictionary = []
 
-for line in lines[2:]:
+for line in lines[1:]:
     values = line.strip().split(',')
     row_dict = dict(zip(headers, values))
     dictionary.append(row_dict)

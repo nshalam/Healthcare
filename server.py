@@ -16,9 +16,10 @@ def index():
     insured = {}
     for state in data:
         states.append(state["Location"])
-        insured[state["Abbreviation"]]=state["Uninsured"]
+        insured[state["Abbreviation"]]=float(state["Uninsured"])
+    print(insured)
         
-    return render_template('index.html', states=sorted(states), data=data)
+    return render_template('index.html', states=sorted(states), insured=insured, data=data)
 
 @app.route('/about')
 def about():
@@ -34,8 +35,9 @@ def about():
 @app.route('/state')
 def state():
     location = request.args.get('name')
-    with open("data/refined_data.json", "r") as f:
-        data = json.load(f)
+    f = open("data/refined_data.json", "r")
+    data = json.load(f)
+    f.close()
     
     states = set()
     employer = nongroup = medicaid = medicare = military = uninsured = None
@@ -51,8 +53,6 @@ def state():
             uninsured = state['Uninsured']
             population = state ['Population']
 
-    if employer is None:  # No matching state found
-        return "State not found", 404
 
     return render_template('state.html', state=location, population=int(population), employer=float(employer), nongroup=float(nongroup), medicaid=float(medicaid), medicare=float(medicare), military=float(military), uninsured=float(uninsured), data=data, states=sorted(states))
 
@@ -69,4 +69,3 @@ def navbar():
 
 if __name__ == '__main__':
     app.run(debug=True)
-    
