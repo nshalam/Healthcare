@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="959" height="593">
 
-
   <title>Healthcare map of the United States, territories not included</title>
   <defs>
   <style type="text/css">
@@ -9,7 +8,7 @@
   .borders {stroke:#FFFFFF; stroke-width:2}    /* color and width of borders between states */
   .dccircle {display:none}
   .separator1 {stroke:#B0B0B0; stroke-width:2} /* color and width of lines around Alaska and Hawaii */
-  .al:hover, .ak:hover, .az:hover, .ar:hover, .ca:hover, .co:hover, .ct:hover, .de:hover, .fl:hover, .ga:hover, .hi:hover, .id:hover, .il:hover, .in:hover, .ia:hover, .ks:hover, .ky:hover, .la:hover, .me:hover, .md:hover, .ma:hover, .mi:hover, .mn:hover, .ms:hover, .mo:hover, .mt:hover, .ne:hover, .nv:hover, .nh:hover, .nj:hover, .nm:hover, .ny:hover, .nc:hover, .nd:hover, .oh:hover, .ok:hover, .or:hover, .pa:hover, .ri:hover, .sc:hover, .sd:hover, .tn:hover, .tx:hover, .ut:hover, .vt:hover, .va:hover, .wa:hover, .wv:hover, .wi:hover, .wy:hover { fill: #808080; } /* Darker gray color on hover */
+  .al:hover, .ak:hover, .az:hover, .ar:hover, .ca:hover, .co:hover, .ct:hover, .de:hover, .fl:hover, .ga:hover, .hi:hover, .id:hover, .il:hover, .in:hover, .ia:hover, .ks:hover, .ky:hover, .la:hover, .me:hover, .md:hover, .ma:hover, .mi:hover, .mn:hover, .ms:hover, .mo:hover, .mt:hover, .ne:hover, .nv:hover, .nh:hover, .nj:hover, .nm:hover, .ny:hover, .nc:hover, .nd:hover, .oh:hover, .ok:hover, .or:hover, .pa:hover, .ri:hover, .sc:hover, .sd:hover, .tn:hover, .tx:hover, .ut:hover, .vt:hover, .va:hover, .wa:hover, .wv:hover, .wi:hover, .wy:hover {fill:#FFFF00; fill-opacity:.5 } 
 
   /* Individual states can be colored as follows:
   .ks,.mt,.pa {fill:#0000FF}
@@ -19,7 +18,7 @@
 
   {% for key, value in insured.items() %}
   {% if value <= 0.01 %}
-      {% set color = '#440000' %}  <!-- Darkest -->
+      {% set color = '#440000' %}
   {% elif value <= 0.02 %}
       {% set color = '#550000' %}
   {% elif value <= 0.03 %}
@@ -51,7 +50,7 @@
   {% elif value <= 0.16 %}
       {% set color = '#ff4444' %}
   {% else %}
-      {% set color = '#ff5555' %}  <!-- Lightest -->
+      {% set color = '#ff5555' %}
   {% endif %}
   
   .{{key}} { fill: {{ color }}; }

@@ -1,32 +1,37 @@
-<svg width="1450" height="250" xmlns="http://www.w3.org/2000/svg">
-    <text x="1340" y="20" style="fill:#000000;font-size:20px;text-anchor:end;">Population (2020 census): {{population}}</text>
+<svg width="1455" height="250" xmlns="http://www.w3.org/2000/svg">
+    <text x="1427" y="20" style="fill:#000000;font-size:20px;text-anchor:end;">Population (2020 census): {{population}}</text>
     
+    <rect x="125" y="100" width="{{ employer * 13 }}" height="50" style="fill:#FF6347;stroke:black;stroke-width:1" />
+    <line x1="125" y1="125" x2="125" y2="170" style="stroke:#000000;stroke-width:1"/>
+    <text x="125" y="185" style="fill:#000000;font-size:14px;">Employer ({{ (employer ) }}%)</text>
     
-    <rect x="40" y="30" width="{{ employer * 1300 }}" height="50" style="fill:#FF6347;stroke:black;stroke-width:1" />
-    <line x1="40" y1="80" x2="40" y2="100" style="stroke:#000000;stroke-width:1"/>
-    <text x="40" y="115" style="fill:#000000;font-size:14px;">Employer ({{ (employer * 100) }}%)</text>
+    <rect x="{{ employer * 13 + 125 }}" y="100" width="{{ nongroup * 13 }}" height="50" style="fill:#FFD700;stroke:black;stroke-width:1" />
+    <line x1="{{ employer * 13 + 125 }}" y1="125" x2="{{ employer * 13 + 125 }}" y2="200" style="stroke:#000000;stroke-width:1"/>
+    <text x="{{ employer * 13 + 125 }}" y="215" style="fill:#000000;font-size:14px;">Non-Group ({{ (nongroup )}}%)</text>
     
-    <rect x="{{ employer * 1300 + 40 }}" y="30" width="{{ nongroup * 1300 }}" height="50" style="fill:#FFD700;stroke:black;stroke-width:1" />
-    <line x1="{{ employer * 1300 + 40 }}" y1="80" x2="{{ employer * 1300 + 40 }}" y2="130" style="stroke:#000000;stroke-width:1"/>
-    <text x="{{ employer * 1300 + 40 }}" y="145" style="fill:#000000;font-size:14px;">Non-Group ({{ (nongroup * 100)}}%)</text>
+    <rect x="{{ (employer + nongroup) * 13 + 125 }}" y="100" width="{{ medicaid * 13 }}" height="50" style="fill:#4682B4;stroke:black;stroke-width:1" />
+    <line x1="{{ (employer + nongroup) * 13 + 125 }}" y1="125" x2="{{ (employer + nongroup) * 13 + 125 }}" y2="170" style="stroke:#000000;stroke-width:1"/>
+    <text x="{{ (employer + nongroup) * 13 + 125 }}" y="185" style="fill:#000000;font-size:14px;">Medicaid ({{ (medicaid ) }}%)</text>
     
+    <rect x="{{ (employer + nongroup + medicaid) * 13 + 125 }}" y="100" width="{{ medicare * 13 }}" height="50" style="fill:#32CD32;stroke:black;stroke-width:1" />
+    <line x1="{{ (employer + nongroup + medicaid) * 13 + 125 }}" y1="125" x2="{{ (employer + nongroup + medicaid) * 13 + 125 }}" y2="200" style="stroke:#000000;stroke-width:1"/>
+    <text x="{{ (employer + nongroup + medicaid) * 13 + 125 }}" y="215" style="fill:#000000;font-size:14px;">Medicare ({{ (medicare ) }}%)</text>
+    
+    <rect x="{{ (employer + nongroup + medicaid + medicare) * 13 + 125 }}" y="100" width="{{ military * 13 }}" height="50" style="fill:#8A2BE2;stroke:black;stroke-width:1" />
+    <line x1="{{ (employer + nongroup + medicaid + medicare) * 13 + 125 }}" y1="125" x2="{{ (employer + nongroup + medicaid + medicare) * 13 + 125 }}" y2="170" style="stroke:#000000;stroke-width:1"/>
+    <text x="{{ (employer + nongroup + medicaid + medicare) * 13 + 125 }}" y="185" style="fill:#000000;font-size:14px;">Military ({{ (military ) }}%)</text>
 
-    <rect x="{{ (employer + nongroup) * 1300 + 40 }}" y="30" width="{{ medicaid * 1300 }}" height="50" style="fill:#4682B4;stroke:black;stroke-width:1" />
-    <line x1="{{ (employer + nongroup) * 1300 + 40 }}" y1="60" x2="{{ (employer + nongroup) * 1300 + 40 }}" y2="100" style="stroke:#000000;stroke-width:1"/>
-    <text x="{{ (employer + nongroup) * 1300 + 40 }}" y="115" style="fill:#000000;font-size:14px;">Medicaid ({{ (medicaid * 100) }}%)</text>
-    
- 
-    <rect x="{{ (employer + nongroup + medicaid) * 1300 + 40 }}" y="30" width="{{ medicare * 1300 }}" height="50" style="fill:#32CD32;stroke:black;stroke-width:1" />
-    <line x1="{{ (employer + nongroup + medicaid) * 1300 + 40 }}" y1="80" x2="{{ (employer + nongroup + medicaid) * 1300 + 40 }}" y2="130" style="stroke:#000000;stroke-width:1"/>
-    <text x="{{ (employer + nongroup + medicaid) * 1300 + 40 }}" y="145" style="fill:#000000;font-size:14px;">Medicare ({{ (medicare * 100) }}%)</text>
-    
+    <rect x="{{ (employer + nongroup + medicaid + medicare + military) * 13 + 125 }}" y="100" width="{{ uninsured * 13 }}" height="50" style="fill:#FFA500;stroke:black;stroke-width:1" />
+    <line x1="{{ (employer + nongroup + medicaid + medicare + military) * 13 + 125 }}" y1="125" x2="{{ (employer + nongroup + medicaid + medicare + military) * 13 + 125 }}" y2="200" style="stroke:#000000;stroke-width:1"/>
+    <text x="{{ (employer + nongroup + medicaid + medicare + military) * 13 + 125 }}" y="215" style="fill:#000000;font-size:14px;">Uninsured ({{ (uninsured ) }}%)</text>
 
-    <rect x="{{ (employer + nongroup + medicaid + medicare) * 1300 + 40 }}" y="30" width="{{ military * 1300 }}" height="50" style="fill:#8A2BE2;stroke:black;stroke-width:1" />
-    <line x1="{{ (employer + nongroup + medicaid + medicare) * 1300 + 40 }}" y1="80" x2="{{ (employer + nongroup + medicaid + medicare) * 1300 + 40 }}" y2="100" style="stroke:#000000;stroke-width:1"/>
-    <text x="{{ (employer + nongroup + medicaid + medicare) * 1300 + 40 }}" y="115" style="fill:#000000;font-size:14px;">Military ({{ (military * 100) }}%)</text>
-    
+    <rect x="125" y="35" width="{{ employer_avg * 13 }}" height="50" style="fill:#FF6347;stroke:black;stroke-width:1" />
+    <rect x="{{ employer_avg * 13 + 125 }}" y="35" width="{{ nongroup_avg * 13 }}" height="50" style="fill:#FFD700;stroke:black;stroke-width:1" />
+    <rect x="{{ (employer_avg + nongroup_avg) * 13 + 125 }}" y="35" width="{{ medicaid_avg * 13 }}" height="50" style="fill:#4682B4;stroke:black;stroke-width:1" />
+    <rect x="{{ (employer_avg + nongroup_avg + medicaid_avg) * 13 + 125 }}" y="35" width="{{ medicare_avg * 13 }}" height="50" style="fill:#32CD32;stroke:black;stroke-width:1" />
+    <rect x="{{ (employer_avg + nongroup_avg + medicaid_avg + medicare_avg) * 13 + 125 }}" y="35" width="{{ military_avg * 13 }}" height="50" style="fill:#8A2BE2;stroke:black;stroke-width:1" />
+    <rect x="{{ (employer_avg + nongroup_avg + medicaid_avg + medicare_avg + military_avg) * 13 + 125 }}" y="35" width="{{ uninsured_avg * 13 }}" height="50" style="fill:#FFA500;stroke:black;stroke-width:1" />
+    <text x="120" y="60" style="fill:#000000;font-size:15px;text-anchor:end;">National average</text>
+    <text x="120" y="125" style="fill:#000000;font-size:15px;text-anchor:end;">{{state}}</text>
 
-    <rect x="{{ (employer + nongroup + medicaid + medicare + military) * 1300 + 40 }}" y="30" width="{{ uninsured * 1300 }}" height="50" style="fill:#FFA500;stroke:black;stroke-width:1" />
-    <line x1="{{ (employer + nongroup + medicaid + medicare + military) * 1300 + 40 }}" y1="80" x2="{{ (employer + nongroup + medicaid + medicare + military) * 1300 + 40 }}" y2="130" style="stroke:#000000;stroke-width:1"/>
-    <text x="{{ (employer + nongroup + medicaid + medicare + military) * 1300 + 40 }}" y="145" style="fill:#000000;font-size:14px;">Uninsured ({{ (uninsured * 100) }}%)</text>
 </svg>
